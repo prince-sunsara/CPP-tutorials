@@ -1,0 +1,42 @@
+     #include<iostream.h>
+     #include<conio.h>
+     class fruit
+     {
+     int price;
+     char s[20];
+     char s1[20];
+     public:
+     void displaydata();
+     void inputdata();
+     }a1,a2,a3;
+     
+     void fruit::inputdata()
+     {
+     cout<<"Enter Fruit Name:"<<endl;
+     cin>>s;
+     cout<<"Enter The Color of fruit:"<<endl;
+     cin>>s1;
+     cout<<"enter the Fruit Of Price per kg:"<<endl;
+     cin>>price;
+     }
+
+     void fruit::displaydata()
+     {
+     cout<<"fruit Name:"<<s<<endl;
+     cout<<"Color Of Fruit:"<<s1<<endl;
+     cout<<"Price Of Fruit:"<<price<<endl;
+     }
+	
+     int main()
+     {
+     clrscr();
+     a1.inputdata();
+     a2.inputdata();
+     a3.inputdata();
+     a1.displaydata();
+     a2.displaydata();
+     a3.displaydata();
+     getch();
+     return 0;
+     }
+

@@ -1,0 +1,38 @@
+#include<iostream.h>
+#include<conio.h>
+int s(int a,int b);
+double s(double a,int b);
+int main()
+{
+  int x,y;
+  double z;
+  clrscr();
+  cout<<"Enter your number :"<<endl;
+  cin>>x;
+  cout<<"enter the power of number :"<<endl;
+  cin>>y;
+  cout<<"Ans is :"<<s(x,y)<<endl;
+  cout<<"Enter your double no :"<<endl;
+  cin>>z;
+  cout<<"enter the power of number :"<<endl;
+  cin>>y;
+  cout<<"Ans is :"<<s(z,y);
+  getch();
+  return 0;
+}
+int s(int a, int b)
+{    int flag=1;
+  for(int i=1;i<=b;i++)
+  {
+     flag=flag*a;
+  }
+  return flag;
+}
+double s(double a, int b)
+{    double  flag=1;
+  for(int i=1;i<=b;i++)
+  {
+     flag=flag*a;
+  }
+  return flag;
+}
